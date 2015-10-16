@@ -32,7 +32,7 @@ if [ $exitstatus = 0 ]; then
 
 	echo "More shit is coming soon! lol"
 
-		software=$(whiptail --title "Choose additional software to install." --checklist \
+		software=$(whiptail --title "Choose additional software to install." --checklist --separate-output  \
 		"Choose additional software!" 15 60 4 \
 		"htop" "Nice process manager" OFF \
 		"nmap" "It's nmap, no explanation needed." OFF \
