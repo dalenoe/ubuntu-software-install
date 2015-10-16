@@ -17,7 +17,7 @@ if [ $exitstatus = 0 ]; then
 
 	sleep 1s
 
-	echo $password | sudo -S apt-get update
+#	echo $password | sudo -S apt-get update
 
 	sleep 1s
 
@@ -41,10 +41,11 @@ if [ $exitstatus = 0 ]; then
  
 		exitstatus=$?
 		if [ $exitstatus = 0 ]; then
-		    echo "You chose to install:" $software
-		    echo "I need to implament the commands to install the software yet."
+		    echo "You chose to install: $software"
+		    sudo -S apt-get install $software
+#		    echo "I need to implament the commands to install the software yet."
 		else
-		    echo "You canceled. WTF dude. . ."
+		    echo "You canceled. Not installing any software today? lol.. why did you even run me then? :P"
 		fi
 
 else
