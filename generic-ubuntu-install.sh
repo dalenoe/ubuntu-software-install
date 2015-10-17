@@ -25,9 +25,6 @@ if [ $exitstatus = 0 ]; then
 
 	sleep 2s
 
-# Commenting this out while testing.
-# sudo apt-get update
-
 	echo "Ok.. now our packages are up to date"
 
 	echo "More shit is coming soon! lol"
@@ -37,6 +34,9 @@ if [ $exitstatus = 0 ]; then
 		"htop" "Nice process manager" OFF \
 		"nmap" "It's nmap, no explanation needed." OFF \
 		"Apache2" "The apache webserver." OFF \
+                "Apache4" "The apache webserver." OFF \
+                "Apache5" "The apache webserver." OFF \
+                "Apache6" "The apache webserver." OFF \
 		"MySQL" "What doesn't need a database? lol" OFF 3>&1 1>&2 2>&3)
  
 		exitstatus=$?
