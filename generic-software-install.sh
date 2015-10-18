@@ -41,7 +41,7 @@ if [ $exitstatus = 0 ]; then
  
 		exitstatus=$?
 		if [ $exitstatus = 0 ]; then
-		    echo "You chose to install: $software"
+		    echo "You chose to install: $SOFTWARE"
 		    sudo -S apt-get install $SOFTWARE
 #		    echo "I need to implament the commands to install the software yet."
 		else
