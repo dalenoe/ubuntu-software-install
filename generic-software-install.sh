@@ -29,8 +29,8 @@ if [ $exitstatus = 0 ]; then
 
 	echo "More shit is coming soon! lol"
 
-		SOFTWARE=$(whiptail --title "Choose additional software to install." --checklist --separate-output  \
-		"Choose additional software!" 30 120 8 \
+		SOFTWARE=$(whiptail --fb --title "Choose additional software to install." --checklist --separate-output  \
+		"Choose additional software!" 30 120 16 \
 		"htop" "Nice process manager" OFF \
 		"nmap" "It's nmap, no explanation needed." OFF \
 		"Apache2" "The apache webserver." OFF \
