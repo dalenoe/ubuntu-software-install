@@ -1,8 +1,26 @@
 #!/bin/bash
 #
-# This script was written by Dale Noe (dalenoe@gmail.com)
-# It's a script that installs various software
-# and even makes a few changes.
+# Generic Software Installer
+#
+# This script is intented for a Ubuntu server, though it could be modified fairly easy.
+#
+# (C) Copyright 2015 Dale Noe <dalenoe@gmail.com>
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+#
+
 
 PASSWORD=$(whiptail --title "Root Password" --passwordbox "Enter your password and choose Ok to continue. We need the ROOT password for sudo commands." 10 60 3>&1 1>&2 2>&3)
  
