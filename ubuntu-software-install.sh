@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Generic Software Installer
+# Ubuntu Software Installer
 #
 # This script is intented for a Ubuntu server, though it could be modified fairly easy.
 #
@@ -31,7 +31,7 @@ if [ $exitstatus = 0 ]; then
 
 	sleep 1s
 
-#	echo $PASSWORD | sudo -S apt-get update
+	echo $PASSWORD | sudo -S apt-get update
 
 	sleep 1s
 
@@ -41,7 +41,7 @@ if [ $exitstatus = 0 ]; then
 
 	echo "Ok.. now our packages are up to date"
 
-	echo "More shit is coming soon! lol"
+	sleep 2s
 
 		SOFTWARE=$(whiptail --fb --title "Choose additional software to install." --checklist --separate-output  \
 		"Choose additional software!" 30 120 16 \
@@ -57,7 +57,6 @@ if [ $exitstatus = 0 ]; then
 		if [ $exitstatus = 0 ]; then
 		    echo "You chose to install: $SOFTWARE"
 		    sudo -S apt-get install $SOFTWARE
-#		    echo "I need to implament the commands to install the software yet."
 		else
 		    echo "You canceled. Not installing any software today? lol.. why did you even run me then? :P"
 		fi
