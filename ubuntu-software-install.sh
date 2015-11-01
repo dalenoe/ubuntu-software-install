@@ -47,11 +47,11 @@ if [ $exitstatus = 0 ]; then
 		"Choose additional software!" 30 120 16 \
 		"htop" "Nice process manager" OFF \
 		"nmap" "It's nmap, no explanation needed." OFF \
-		"Apache2" "The apache webserver." OFF \
-                "Apache4" "The apache webserver." OFF \
-                "Apache5" "The apache webserver." OFF \
-                "Apache6" "The apache webserver." OFF \
-		"MySQL" "What doesn't need a database? lol" OFF 3>&1 1>&2 2>&3)
+		"bmon" "Bandwidth Monitor" OFF \
+                "lamp-server^" "LAMP Stack (apache, mysql, php)" OFF \
+                "postgresql" "PostgreSQL" OFF \
+                "whois" "A domain whois server/search." OFF \
+		"nagios3" "Network/Server Monitor" OFF 3>&1 1>&2 2>&3)
  
 		exitstatus=$?
 		if [ $exitstatus = 0 ]; then
