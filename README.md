@@ -1,6 +1,6 @@
 # Ubuntu Software Installer
 
-## Written By: Dale Noe (dalenoe@gmail.com)
+Written By: Dale Noe (dalenoe@gmail.com)
 
 This script was written for Ubuntu, but should work fine on Debian as well. It could also be
 modified for other Linux flavors.
