@@ -7,9 +7,18 @@ modified for other Linux flavors.
 
 This script will update the software repository, before installing the packages of your choice.
 
-Want to see additional packages? Open a issue and we will get the package added if possible.
+## Features
 
-Right now the script is only setup to install software already in the repository.
-It won't update your sources.list at this time.
+It will install different types of software. Right now there is 6 things it can install.
 
+htop  
+nmap  
+bmon  
+lamp-server - LAMP Stack  
+postgresql  
+whois  
+nagios3  
 
+Want to see something added? Open a issue on the gitlab project page. Some of this
+software might already be installed on your system by default. The next version will
+make sure it's not installing stuff that is there by default.
