@@ -11,7 +11,7 @@
 #
 
 PASSWORD=$(whiptail --title "Root Password" --passwordbox "Enter your password and choose Ok to continue. We need the ROOT password for sudo commands." 10 60 3>&1 1>&2 2>&3)
- 
+
 exitstatus=$?
 if [ $exitstatus = 0 ]; then
 
@@ -44,7 +44,7 @@ if [ $exitstatus = 0 ]; then
                 "postgresql" "PostgreSQL" OFF \
                 "whois" "A domain whois server/search." OFF \
 		"nagios3" "Network/Server Monitor" OFF 3>&1 1>&2 2>&3)
- 
+
 		exitstatus=$?
 		if [ $exitstatus = 0 ]; then
 		    echo "You chose to install: $SOFTWARE"
