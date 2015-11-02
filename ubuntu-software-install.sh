@@ -58,7 +58,7 @@ if [ $exitstatus = 0 ]; then
 		    echo "You chose to install: $SOFTWARE"
 		    sudo -S apt-get install $SOFTWARE
 		else
-		    echo "You canceled. Not installing any software today? lol.. why did you even run me then? :P"
+		    echo "You canceled. Not installing any software today?"
 		fi
 
 else
