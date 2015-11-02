@@ -58,14 +58,8 @@ if [ $exitstatus = 0 ]; then
 		    echo "You chose to install: $SOFTWARE"
 		    sudo -S apt-get install $SOFTWARE
 		else
-		    echo "You canceled. Not installing any software today? lol.. why did you even run me then? :P"
+		    echo "You canceled. Not installing any software today?"
 		fi
-
-				if (whiptail --title "Webmin Install" --yesno "Would you like to install Webmin?" 8 78) then
-				    echo "User selected Yes, exit status was $?."
-				else
-				    echo "User selected No, exit status was $?."
-				fi
 
 else
 
