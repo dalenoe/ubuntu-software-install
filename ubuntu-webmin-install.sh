@@ -32,8 +32,8 @@ if [ $exitstatus = 0 ]; then
 	echo "This is going to take awhile, go get a cup of coffee."
 
 	sleep 1s
-#commented out for developing
-#	echo $PASSWORD | sudo -S apt-get update
+
+	echo $PASSWORD | sudo -S apt-get update
 
 	sleep 1s
 
@@ -46,6 +46,10 @@ if [ $exitstatus = 0 ]; then
 	sleep 2s
 
 	echo $PASSWORD | sudo -S apt-get install webmin
+
+	sudo -S rm -rf jcameron-key.asc
+
+	echo "Congrats, you have successfully install webmin"
 
 else
 
